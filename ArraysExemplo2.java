@@ -7,7 +7,7 @@ Informe se cada aluno foi aprovado ou reprovado (nota mínima para aprovação: 
 
 import java.util.Scanner;
 
-public class ArraysExemplo {
+public class ArraysExemplo2 {
 
     public static void main(String[] args){
         String[] alunos = new String[5];
@@ -16,15 +16,18 @@ public class ArraysExemplo {
         Scanner scanner = new Scanner(System.in);
 
         for(int i=0; i<5; i++){
-            System.out.println("Digite o nome do aluno " +(i+1)+": ");
+            System.out.println("Digite o nome do aluno: ");
             alunos[i] = scanner.nextLine();
 
             double notas = 0; 
-
-            for (int y=0; y<4; y++){
-                System.out.println("Digite a nota "+(y+1)+" do aluno "+alunos[i]+": ");
-                notas = notas + scanner.nextDouble();
-            }    
+            System.out.println("Digite a nota 1: "); 
+            notas = notas + scanner.nextDouble();
+            System.out.println("Digite a nota 2: "); 
+            notas = notas + scanner.nextDouble();
+            System.out.println("Digite a nota 3: "); 
+            notas = notas + scanner.nextDouble();
+            System.out.println("Digite a nota 4: "); 
+            notas = notas + scanner.nextDouble();
             
             scanner.nextLine(); //Limpa o buffer
 
